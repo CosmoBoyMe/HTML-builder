@@ -38,7 +38,7 @@ const createIndexPage = async () => {
 
 const mergeStyles = async () => {
   const pathToStyleFolder = path.join(__dirname, "./styles");
-  const pathToBundleFile = path.join(pathToNewDist, "bundle.css");
+  const pathToBundleFile = path.join(pathToNewDist, "style.css");
   const removeBundleCssFile = await fs.rm(pathToBundleFile, {
     recursive: true,
     force: true,
